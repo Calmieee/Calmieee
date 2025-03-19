@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="30" viewBox="0 0 300 30">
+  <style>
+    .text {
+      font-family: Arial, sans-serif; /* Можно заменить на любой шрифт */
+      font-size: 24px;
+      font-weight: bold;
+      fill: #2F4F4F; /* Цвет текста (можно менять) */
+      opacity: 0;
+      animation: fade 8s infinite;
+    }
+    
+    @keyframes fade {
+      0% { opacity: 0; } /* Начало цикла */
+      10% { opacity: 1; } /* Появление текста */
+      23% { opacity: 1; } /* Удержание на экране */
+      33% { opacity: 0; } /* Исчезновение */
+      100% { opacity: 0; } /* Пауза перед повтором */
+    }
+    
+    /* Задержки для каждого этапа */
+    .t2 { animation-delay: 2s; }
+    .t3 { animation-delay: 4s; }
+    .t4 { animation-delay: 6s; }
+  </style>
+  
+  <text x="0" y="25"> <!-- y="25" для вертикального выравнивания -->
+    <tspan class="text">Фронтенд</tspan>
+    <tspan class="text t2" dx="-52">Фронт</tspan> <!-- dx корректирует позицию -->
+    <tspan class="text t3" dx="-20">Ф</tspan>
+    <tspan class="text t4" dx="-45">Фуллстак</tspan>
+  </text>
+</svg>
